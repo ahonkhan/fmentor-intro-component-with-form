@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <main class="min-h-screen flex items-center py-[80px] md:py-[70px]">
+
+        <div class="site-container mx-auto px-6 md:px-8 lg:px-0 lg:w-[1111px]">
+            <div class="wrapper flex flex-col md:flex-row gap-[40px] md:gap-[32px] justify-between items-center">
+                <div class="wrapper-contents text-center md:text-start w-full md:w-[50%]">
+                    <h1 class="main-title text-[32px] md:text-[50px] font-bold text-white leading-[110%]"> Learn to code
+                        by watching
+                        others </h1>
+
+                    <div class="h-6 md:h-[32px]"></div>
+                    <p class="sub-text text-white">
+                        See how experienced developers solve problems in real-time. Watching scripted tutorials is
+                        great,
+                        but understanding how developers think is invaluable.
+                    </p>
+                </div>
+                <div class="wrapper-form w-full md:w-[50%] ">
+                    <div class="">
+                        <div class="form-ads rounded-lg text-sm">
+                            <p class=" py-5 rounded-lg px-8"> <span class="font-semibold">Try it free 7 days</span> then
+                                $20/mo.
+                                thereafter
+                            </p>
+                        </div>
+                        <div class="h-4"></div>
+                        <div class="form-bg-wrapper rounded-lg">
+                            <form action="" class="bg-white flex flex-col gap-3 rounded-lg p-5 md:p-10">
+                                <div class="box-wrapper fname-wrapper">
+                                    <div class="input-box px-4 md:px-[32px]">
+                                        <input type="text" id="fname" placeholder="First Name"
+                                            class="h-[52px] md:h-[56px] w-full px-2 ">
+                                        <div class="err shrink-0 ">
+                                            <img src="./images/icon-error.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="error-text py-1">
+                                        <p>First Name Cannot be empty</p>
+                                    </div>
+                                </div>
+                                <div class="box-wrapper  lname-wrapper">
+                                    <div class="input-box px-4 md:px-[32px]">
+                                        <input type="text" id="lname" placeholder="Last Name"
+                                            class="h-[52px] md:h-[56px] w-full px-2">
+                                        <div class="err shrink-0 ">
+                                            <img src="./images/icon-error.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="error-text py-1">
+                                        <p>Last Name Cannot be empty</p>
+                                    </div>
+                                </div>
+                                <div class="box-wrapper  email-wrapper">
+                                    <div class="input-box  px-4 md:px-[32px]">
+                                        <input type="text" id="email" placeholder="Email Address"
+                                            class="h-[52px] md:h-[56px] w-full px-2">
+                                        <div class="err shrink-0 ">
+                                            <img src="./images/icon-error.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="error-text py-1">
+                                        <p>Looks like this is not an email</p>
+                                    </div>
+                                </div>
+                                <div class="box-wrapper  password-wrapper">
+                                    <div class="input-box px-4 md:px-[32px]">
+                                        <input type="password" id="password" placeholder="Password"
+                                            class="h-[52px] md:h-[56px] w-full px-2">
+                                        <div class="err shrink-0 ">
+                                            <img src="./images/icon-error.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="error-text py-1">
+                                        <p>Password can not be empty</p>
+                                    </div>
+                                </div>
+                                <div class="submit-btn-wrapper rounded-lg">
+                                    <button id="submit"
+                                        class="h-[50px] md:h-[56px] rounded-lg uppercase font-semibold tracking-wide text-white">Claim
+                                        your free trial</button>
+                                </div>
+                                <div class="text-[12px] text-DarkBlue font-[500] text-center">
+                                    <p> By clicking the button, you are agreeing to our
+                                        <a href="#" class="text-Red">Terms and Services</a>
+                                    </p>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

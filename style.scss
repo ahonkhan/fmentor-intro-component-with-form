@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    // Primary
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    //Accent
+    --Blue: hsl(248, 32%, 49%);
+    //Neutral
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+// text colors
+.text-Red {
+    color: var(--Red);
+}
+
+.text-Green {
+    color: var(--Green);
+}
+
+.text-Blue {
+    color: var(--Blue);
+}
+
+.text-DarkBlue {
+    color: var(--DarkBlue);
+}
+
+.text-GrayishBlue {
+    color: var(--GrayishBlue);
+}
+
+// background colors
+.bg-Red {
+    background-color: var(--Red);
+}
+
+.bg-Green {
+    background-color: var(--Green);
+}
+
+.bg-Blue {
+    background-color: var(--Blue);
+}
+
+.bg-DarkBlue {
+    background-color: var(--DarkBlue);
+}
+
+.bg-GrayishBlue {
+    background-color: var(--GrayishBlue);
+}
+
+main {
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: var(--Red);
+}
+
+.form-ads {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 8px;
+    background-color: hsla(249, 10%, 26%, 0.311);
+
+
+    p {
+        background-color: var(--Blue);
+
+    }
+}
+
+.form-bg-wrapper {
+    padding-bottom: 8px;
+    background-color: hsla(249, 10%, 26%, 0.311);
+
+}
+
+.input-box {
+    border: 1.5px solid #d4d4d4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+        background-color: transparent;
+        color: var(--DarkBlue);
+        font-weight: 500;
+        outline: none;
+        border: none;
+        border: red;
+    }
+}
+
+.err {
+    display: none;
+}
+
+.error-wrapper {
+    .input-box {
+        border-color: var(--Red) !important;
+    }
+
+    input {
+        color: var(--Red);
+    }
+
+    .err {
+        display: block;
+    }
+
+    .error-text {
+        display: block;
+    }
+}
+
+.error-text {
+    text-align: end;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--Red);
+    font-weight: 500;
+    display: none;
+}
+
+
+.submit-btn-wrapper {
+    padding-bottom: 8px;
+    background-color: hsla(154, 51%, 43%, 0.915);
+
+    button {
+        background-color: var(--Green);
+        width: 100%;
+        
+    }
+}
